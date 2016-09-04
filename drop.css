@@ -1,0 +1,89 @@
+body {
+    background-color: #eee;
+    text-align: left;
+    padding-top: 1px;
+}
+
+.nav {
+    display: block;
+    font: 25px Oswald, serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    background-color: #314149;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav .button-dropdown {
+    position: relative;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    background-color: #314149;
+    text-decoration: none;
+    font-size:18px;
+    padding: 20px 10px 20px 10px;
+   transition-duration: 0.6s;
+}
+
+.nav li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #999;
+}
+
+.nav li a:hover, .nav li a.dropdown-toggle.active {
+    background-color: #289dcc;
+    color: #fff;
+}
+
+.nav li a:hover span, .nav li a.dropdown-toggle.active span {
+    color: #fff;
+}
+
+.nav li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    text-align: left;
+}
+
+.nav li .dropdown-menu.active {
+    display: block;
+}
+
+.nav li .dropdown-menu a {
+    width: 150px;
+}
+
+#FooterStuffs {
+
+    background-color: #263238;
+    font-size: 18px;
+    padding: 50px;
+    margin-top: 75px;
+    margin-bottom: 0px;
+}
+.footerlink {
+  font-family: Oswald;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.footerlink:hover {
+    color: #cfd8dc;
+
+
+}

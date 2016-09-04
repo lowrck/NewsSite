@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page Please Ignore</title>
+    <link rel="stylesheet" media="all" type="text/css" href="drop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Droid Sans', 'Droid Serif', "Oswald"]
+            }
+        });
+    </script>
+</head>
+<body>
+<div id="NavBarSeperator">
+<ul class="nav">
+    <li>
+        <p style="font-size: 42px; color: white; font-family: 'Oswald'; padding: 15px 35px 15px 35px">The News 💬</p>
+    </li>
+    <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+            Trending <span>▼</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+
+                <a href="#">Entertainment</a>
+                <a href="#">Travel</a>
+                <a href="#">Education</a>
+
+            </li>
+
+
+        </ul>
+    </li>
+    <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+            Tech <span>▼</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#">latest</a>
+                <a href="#">
+                    Programming
+                </a>
+                <a href="#">
+                    App Review
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+            Politics <span>▼</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#">Headlines</a>
+                <a href="#">The Facts</a>
+                <a href="#">The Gossip</a>
+            </li>
+        </ul>
+    </li>
+    <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+            About <span>▼</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#">Our Story</a>
+                <a href="https://www.stjude.org/donate">Donate</a>
+            </li>
+        </ul>
+    </li>
+<li class="button-dropdown">
+    <a href="javascript:void(0)" class="dropdown-toggle">
+        FAQ <span>▼</span>
+    </a>
+    <ul class="dropdown-menu">
+        <li>
+            <a href="#">Our Policy</a>
+            <a href="#">Careers</a>
+        </li>
+    </ul>
+</li>
+    <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+            Contact us <span>▼</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#">Email</a>
+                <a href="#">Phone</a>
+            </li>
+        </ul>
+    </li>
+    </ul>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+    })
+});
+</script>
+</div>
+<div id="MainContent" alt="Main Content">
+<br><br>
+<h1 style="font-size: 250%">Welcome To The News</h1>
+    <img src="clifftop.jpg" alt="Clifftop House">
+</div>
+<div id="FooterContent" alt="Footer Content">
+    <footer id="FooterStuffs">
+      <h2 style="text-align: center; font-size: 28px; color: #b0bec5">The News</h2>
+        <br><br>
+        <div style="text-align: center">
+           <a class="footerlink"  href="#">Home</a>
+            <a class="footerlink" href="#">Tech</a>
+            <a class="footerlink" href="#">Politics</a>
+        <a class="footerlink" href="#">About</a>
+        <a class="footerlink" href="#">FAQ</a>
+        <a class="footerlink" href="#">Contact</a>
+        </div>
+        <br><br>
+        <p style="color: #b0bec5; font-size: 16px; text-align: center;"> The News © 1983  </p>
+
+
+
+
+
+
+    </footer>
+
+
+</div>
+</body>
+</html>
