@@ -1,0 +1,11 @@
+.fleximages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.imagesize {
+    flex: 0 0 33%;
+    height: 300px;
+    width: 400px;
+}
